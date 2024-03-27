@@ -1,0 +1,20 @@
+MediFill
+
+1.Home page  - Nidhi
+2.Login - shubham
+3.Signup - shubham
+4.View product -Devi
+5.Search Product - Riya
+6.Cart - Riya
+7.Payment - Devi
+8.Status page -sanjay 
+9.Service - param
+10.Profile - Nidhi
+11.Dr profile -Nidhi
+12.appointment -sanjay
+13.ShopOwenerREgister -sanjay
+14.FillmediByShopOwner - Aistin
+15.privacy & policy - sandeep
+16.FeedBack - param
+17.DrRegistration - nidhi
+

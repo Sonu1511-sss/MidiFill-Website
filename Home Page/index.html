@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+  <!-- Tailwinds css cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Normal css link -->
+  <link rel="stylesheet" href="style.css">
+   <!-- rimix  icon cdn -->
+   <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+   rel="stylesheet"
+/>
+   <!-- fontawosame  icon cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class=" ">
+    <!-- This is navbar -->
+    <section class=" font-poppins  shadow-lg   relative">
+        <div class="max-w-6xl px-4 mx-auto " x-data="{open:false} ">
+            <nav class="flex justify-between   py-4 ">
+                <a href="" class="text-[2.3rem] text-cyan-500 font-bold leading-none dark:text-gray-400">M<span class="text-gray-700 text-[1.6rem]">ediFill</span></a>
+                <div class="flex lg:hidden">
+                    <a href="#"
+                        class="inline-block px-4 py-3 mr-2 text-xs font-semibold leading-none text-blue-600 border border-blue-400 rounded dark:hover:text-blue-300 dark:text-gray-400 dark:border-gray-400 hover:text-blue-700 hover:border-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </a>
+                    <button
+                        class="flex items-center px-3 py-2 text-blue-600 border border-blue-400 rounded dark:text-gray-400 hover:text-blue-800 hover:border-blue-300 dark:border-gray-400 lg:hidden"
+                        @click="open =true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+
+                </div>
+
+                <ul class="hidden lg:w-auto lg:space-x-12 lg:items-center lg:flex gap-2">
+                    <li><a href="#Home" class="text-lg text-gray-700 font-semibold hover:text-cyan-500 dark:text-gray-400 dark:hover:text-blue-300">Appointment</a>
+                    </li>
+                    <li><a href="#about-us" class="text-lg text-gray-700 font-semibold  hover:text-cyan-500 dark:text-gray-400 dark:hover:text-blue-300">Become a Shopkeper</a>
+                    </li>
+                    <li><a href="#Department" class="text-lg text-gray-700 font-semibold  hover:text-cyan-500 dark:text-gray-400 dark:hover:text-blue-300">Medicine </a>
+                    </li>
+                </ul>
+                <div class="hidden lg:flex gap-[2rem]">
+                    <a href="#" class="text-[1.8rem] text-gray-700">
+                        <i class="ri-account-circle-line"></i>
+                       <span class="text-[1.4rem] font-semibold text-gray-700"> Hello,Log in</span>
+                    </a> 
+                    <a href="#" class="text-[1.8rem] text-gray-700">
+                        <i class="ri-store-line"></i>
+                       <span class="text-[1.4rem] font-semibold text-gray-700"> Shop</span>
+                    </a> 
+                    <a href="" class="text-[1.8rem] text-gray-700">
+                        <i class="ri-shopping-cart-line"></i>
+                        <span class="text-[1.4rem] font-semibold text-gray-700"> Cart</span>
+                    </a>
+              
+                <a href="" class="text-[1.8rem] text-gray-700">
+                    <i class="ri-account-circle-line"></i>
+                </a>
+            </nav>
+        </div>
+    </section>
+    <!-- this is Header -->
+    <section class="">
+    <div class="flex justify-center mt-[2rem] gap-3  ">
+        <input type="text" class="w-[46rem] py-2 pl-10 pr-4 text-gray-700 bg-gray-100 border-2 rounded-full dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 " placeholder="Search">
+        <button class="text-white bg-[#10847e] w-[6rem] p-[0.3rem] border-2 rounded-full">Search</button>          
+    </div>
+
+    <!-- this is doctors info -->
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5 lg:gap-5">
+            <!-- person - start -->
+            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img src="data:image/jpeg;base64,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" loading="lazy" alt="Photo by Radu Florin" class="h-full w-full object-cover object-center" />
+              </div>
+      
+              <div>
+                <div class="text-center font-bold text-indigo-500 md:text-lg">John McCulling</div>
+                <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Founder / CEO</p>
+      
+                <!-- social - start -->
+                <div class="flex justify-center">
+                  <div class="flex gap-4">
+                    <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                      </svg>
+                    </a>
+      
+                    <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- social - end -->
+              </div>
+            </div>
+            <!-- person - end -->
+      
+            <!-- person - start -->
+            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtW0o_Sr62KBhzXkgtyTyobTfHYQvX_4AQMQ&usqp=CAU" loading="lazy" alt="Photo by christian ferrer" class="h-full w-full object-cover object-center" />
+              </div>
+      
+              <div>
+                <div class="text-center font-bold text-indigo-500 md:text-lg">Kate Berg</div>
+                <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">CFO</p>
+      
+                <!-- social - start -->
+                <div class="flex justify-center">
+                  <div class="flex gap-4">
+                    <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                      </svg>
+                    </a>
+      
+                    <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- social - end -->
+              </div>
+            </div>
+            <!-- person - end -->
+      
+            <!-- person - start -->
+            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTanIBJOokdx-Cs8ZpZWLD2h0NhSAtHXD1keA&usqp=CAU" loading="lazy" alt="Photo by Ayo Ogunseinde" class="h-full w-full object-cover object-center" />
+              </div>
+      
+              <div>
+                <div class="text-center font-bold text-indigo-500 md:text-lg">Greg Jackson</div>
+                <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">CTO</p>
+      
+                <!-- social - start -->
+                <div class="flex justify-center">
+                  <div class="flex gap-4">
+                    <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                      </svg>
+                    </a>
+      
+                    <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- social - end -->
+              </div>
+            </div>
+            <!-- person - end -->
+      
+            <!-- person - start -->
+            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sGhU-Hrzo7mVuXqG9UwdOiqifuuq3nFifQ&usqp=CAU" loading="lazy" alt="Photo by Midas Hofstra" class="h-full w-full object-cover object-center" />
+              </div>
+      
+              <div>
+                <div class="text-center font-bold text-indigo-500 md:text-lg">Robert Greyson</div>
+                <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Creative Director</p>
+      
+                <!-- social - start -->
+                <div class="flex justify-center">
+                  <div class="flex gap-4">
+                    <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                      </svg>
+                    </a>
+      
+                    <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- social - end -->
+              </div>
+            </div>
+            <!-- person - end -->
+      
+            <!-- person - start -->
+            <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+              <div class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                <img src="data:image/jpeg;base64,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" loading="lazy" alt="Photo by Elizeu Dias" class="h-full w-full object-cover object-center" />
+              </div>
+      
+              <div>
+                <div class="text-center font-bold text-indigo-500 md:text-lg">John Roberts</div>
+                <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Investor Relations</p>
+      
+                <!-- social - start -->
+                <div class="flex justify-center">
+                  <div class="flex gap-4">
+                    <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                      </svg>
+                    </a>
+      
+                    <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- social - end -->
+              </div>
+            </div>
+            <!-- person - end -->
+          </div>
+        </div>
+      </div>
+      <!-- this is slider -->
+      <div class="relative w-full   flex gap-[3rem] py-6 overflow-x-auto">
+        <img class="h-[17rem] w-[53rem] aspect-video rounded-sm object-cover object-center dark:bg-gray-500" src="https://consumer-app-images.pharmeasy.in/marketing/comp_india_covered.jpg" alt="Image 1">
+        <img class="h-[17rem] w-[53rem] aspect-video rounded-sm object-cover object-center dark:bg-gray-500" src="https://consumer-app-images.pharmeasy.in/marketing/comp_50lac.jpg" alt="Image 2">
+        <img class="h-[17rem] w-[53rem]aspect-video rounded-sm object-cover object-center dark:bg-gray-500" src="https://consumer-app-images.pharmeasy.in/marketing/comp_3step.jpg" alt="Image 3">
+        <img class="h-[17rem] w-[53rem] aspect-video rounded-sm object-cover object-center dark:bg-gray-500" src="https://consumer-app-images.pharmeasy.in/marketing/comp_cod.jpg" alt="Image 4">
+        </div>
+     <!-- this is product item -->
+     <section class="">
+      <h3 class=" font-bold py-[3rem] pl-[7rem] lg:text-[2rem] lg:text-gray-700 sm:text-[0.9rem]">Top-searched specialties</h3>
+      <div class="flex flex-wrap  justify-center gap-[1.3rem] ">
+        <div class=" h-[14rem] w-[14rem] pt-[1rem] bg-blue-50 shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[3rem] pt-[1rem] h-[8rem]" src="Heart.png" alt="">
+          <h4 class="font-bold text-center text-[1.4rem] text-gray-700">Primary Care</h4>
+        </div>
+        <div class=" h-[14rem] w-[14rem] pt-[1rem] bg-blue-50 shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[3rem] pt-[1rem] h-[8rem]" src="Dentist.png" alt="">
+          <h4 class="font-bold text-center text-[1.4rem] text-gray-700">Dentist</h4>
+        </div>
+        <div class=" h-[14rem] w-[14rem] pt-[1rem] bg-blue-50 shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[3rem] pt-[1rem] h-[8rem]" src="OB- Gyn.png" alt="">
+          <h4 class="font-bold text-center text-[1.4rem] text-gray-700">OB-GYN</h4>
+        </div>
+        <div class=" h-[14rem] w-[14rem] pt-[1rem] bg-blue-50 shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[3rem] pt-[1rem] h-[8rem]" src="Ganiyologist.png" alt="">
+          <h4 class="font-bold text-center text-[1.4rem] text-gray-700">Dermatologist</h4>
+        </div>
+        <div class=" h-[14rem] w-[14rem] pt-[1rem] bg-blue-50 shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[3rem] pt-[1rem] h-[8rem]" src="Physiothempist.png" alt="">
+          <h4 class="font-bold text-center text-[1.4rem] text-gray-700">Psychiatrist</h4>
+        </div>
+        <div class=" h-[14rem] w-[14rem] pt-[1rem] bg-blue-50 shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[3rem] pt-[1rem] h-[8rem]" src="Dermologist.png" alt="">
+          <h4 class="font-bold text-center text-[1.4rem] text-gray-700">Eye Doctor</h4>
+        </div>
+      </div>
+        
+     </section>
+     <!-- this is shop product -->
+     <section>
+      <h3 class=" font-bold py-[3rem] pl-[7rem] lg:text-[2rem] lg:text-gray-700 sm:text-[0.9rem]">Shop by Categories</h3>
+      <div class="flex flex-wrap  justify-center gap-[1.3rem] ">
+        <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover: ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-center text-gray-700 py-[0.4rem] ">Top products</h4>
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-center text-gray-700 py-[0.4rem] ">Skin care</h4>
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-center text-gray-700 py-[0.4rem] ">Health food and <br> drinks</h4>
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-center text-gray-700 py-[0.4rem] ">Healthcare devices</h4>
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-center text-gray-700 py-[0.4rem] ">Personal care</h4>
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-center text-gray-700 py-[0.4rem] ">Elderly care</h4>
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-center text-gray-700 py-[0.4rem] ">Mother and baby  <br>  care</h4>
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-center text-gray-700 py-[0.4rem] ">Accessories &<br> wearables</h4>
+      </div>
+      </div>
+     </section>
+     <!-- this is tranding product -->
+     <section>
+      <h3 class=" font-bold py-[3rem] pl-[7rem] lg:text-[2rem] lg:text-gray-700 sm:text-[0.9rem]">Trending Near You</h3>
+      <div class="flex flex-wrap justify-center   gap-[1rem] ">
+        <div>
+          <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+            <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+          </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Everherb Karela Jamun <br> Juice - Helps Maintains....</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>      
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Shelcal 500mg Strip   <br>  Of 15 Tablets</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Unwanted 72 Strip <br> Of 1 Tablet</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">I-Pill Emergency <br>  Contraceptive Pill</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Evion 400mg Strip <br>  Of 20 Capsule</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Rozagold 20mg Strip <br>  Of 10 Capsules</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Everherb Karela Jamun <br> Juice - Helps Maintains....</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Rozagold 20mg Strip <br>  Of 10 Capsules</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>      </div>
+      </div>
+     </section>
+     <!-- this is health care -->
+     <section>
+      <h3 class=" font-bold py-[3rem] pl-[7rem] lg:text-[2rem] lg:text-gray-700 sm:text-[0.9rem]">Lab Tests by Health Concern</h3>
+      <div class="flex flex-wrap justify-evenly   gap-[1rem] ">
+          <img class="h-[12rem]" src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/bca113a1b80-Bone.png?dim=256x0" alt="">
+          <img class="h-[12rem]" src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/e1a18d8deac-Vitamins.png?dim=256x0" alt="">
+          <img class="h-[12rem]" src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/6b775dd8478-covid.png?dim=256x0" alt="">
+          <img class="h-[12rem]" src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/71fb3c06e71-Thyroid.png?dim=256x0" alt="">
+          <img class="h-[12rem]" src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/1e927857c26-Diabetes.png?dim=256x0" alt="">
+          <img class="h-[12rem]" src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/520acd31898-heart.png?dim=256x0" alt="">
+          <img class="h-[12rem]" src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/9696ef00b0a-lifestyle.png?dim=256x0" alt="">
+      </div>
+     </section>
+     <!-- this is products -->/
+     <section>
+      <h3 class=" font-bold py-[3rem] pl-[7rem] lg:text-[2rem] lg:text-gray-700 sm:text-[0.9rem]">New Launches</h3>
+      <div class="flex flex-wrap justify-center   gap-[1rem] ">
+        <div>
+          <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+            <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+          </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Everherb Karela Jamun <br> Juice - Helps Maintains....</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>      
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Shelcal 500mg Strip   <br>  Of 15 Tablets</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Unwanted 72 Strip <br> Of 1 Tablet</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">I-Pill Emergency <br>  Contraceptive Pill</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Evion 400mg Strip <br>  Of 20 Capsule</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Rozagold 20mg Strip <br>  Of 10 Capsules</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Everherb Karela Jamun <br> Juice - Helps Maintains....</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Rozagold 20mg Strip <br>  Of 10 Capsules</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>      </div>
+      </div><br><br><br>
+      <div class="flex flex-wrap justify-center   gap-[1rem] ">
+        <div>
+          <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+            <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+          </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Everherb Karela Jamun <br> Juice - Helps Maintains....</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>      
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Shelcal 500mg Strip   <br>  Of 15 Tablets</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     
+      </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Unwanted 72 Strip <br> Of 1 Tablet</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">I-Pill Emergency <br>  Contraceptive Pill</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Evion 400mg Strip <br>  Of 20 Capsule</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Rozagold 20mg Strip <br>  Of 10 Capsules</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Everherb Karela Jamun <br> Juice - Helps Maintains....</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>     </div>
+      <div>
+        <div class=" h-[10rem] w-[10rem] pt-[1rem] border-2 border-gray-200 rounded-lg shadow-lg hover:border-2 border-blue-300 ">
+          <img class=" pl-[1.5rem] pt-[1rem] h-[8rem]" src="" alt="">
+        </div>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">Rozagold 20mg Strip <br>  Of 10 Capsules</h4>
+        <h5 class="font-bold text-start  text-gray-500 ">MRP <del>₹599.00</del></h5>
+        <h4 class="font-bold text-start  text-gray-700 py-[0.4rem] ">₹207.48
+         <span class="text-pink-600">(48%)</span> </h4>      </div>
+      </div>
+     </section>
+    </section> 
+    <!-- this is footer -->
+    <footer class="bg-blue-50 mt-[6rem] dark:bg-gray-900">
+      <div class="container px-6 py-8 mx-auto">
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              <div>
+                  <div class="text-xs font-medium text-gray-400 uppercase">
+                      Getting Started
+                  </div>
+  
+                  <a href="#" class="block mt-5 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Installation
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Release Notes
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Upgrade Guide
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Using with Preprocessors
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Optimizing for Production
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Browser Support
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      IntelliSense
+                  </a>
+              </div>
+  
+              <div>
+                  <div class="text-xs font-medium text-gray-400 uppercase">
+                      Getting Started
+                  </div>
+  
+                  <a href="#" class="block mt-5 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Installation
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Release Notes
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Upgrade Guide
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Using with Preprocessors
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Optimizing for Production
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Browser Support
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      IntelliSense
+                  </a>
+              </div>
+  
+              <div>
+                  <div class="text-xs font-medium text-gray-400 uppercase">
+                      Getting Started
+                  </div>
+  
+                  <a href="#" class="block mt-5 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Installation
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Release Notes
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Upgrade Guide
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Using with Preprocessors
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Optimizing for Production
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Browser Support
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      IntelliSense
+                  </a>
+              </div>
+  
+              <div>
+                  <div class="text-xs font-medium text-gray-400 uppercase">
+                      Getting Started
+                  </div>
+  
+                  <a href="#" class="block mt-5 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Installation
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Release Notes
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Upgrade Guide
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Using with Preprocessors
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Optimizing for Production
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      Browser Support
+                  </a>
+                  <a href="#" class="block mt-3 text-sm font-medium text-gray-500 duration-700 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 hover:underline">
+                      IntelliSense
+                  </a>
+              </div>
+          </div>
+  
+          <hr class="my-10 border-gray-200 dark:border-gray-700">
+  
+          <div class="sm:flex sm:items-center sm:justify-between">
+              <p class="text-sm text-gray-400">© Copyright 2021. All Rights Reserved.</p>
+  
+              <div class="flex mt-3 -mx-2 sm:mt-0">
+                  <a href="#" class="mx-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit">
+                      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                              d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z">
+                          </path>
+                      </svg>
+                  </a>
+  
+                  <a href="#" class="mx-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Facebook">
+                      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                              d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+                          </path>
+                      </svg>
+                  </a>
+  
+                  <a href="#" class="mx-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Github">
+                      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                              d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                          </path>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login  page</title>
+      <!-- Tailwinds css cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Normal css link -->
+  <link rel="stylesheet" href="style.css">
+   <!-- rimix  icon cdn -->
+   <link
+   href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+   rel="stylesheet"
+/>
+   <!-- fontawosame  icon cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="  ">
+    <!-- This is navbar -->
+    <section class=" font-poppins  shadow-lg   relative">
+        <div class="max-w-6xl px-4 mx-auto " x-data="{open:false} ">
+            <nav class="flex justify-between   py-4 ">
+                <a href="" class="text-[2.3rem] text-cyan-500 font-bold leading-none dark:text-gray-400">M<span class="text-gray-700 text-[1.6rem]">ediFill</span></a>
+                <div class="flex lg:hidden">
+                    <a href="#"
+                        class="inline-block px-4 py-3 mr-2 text-xs font-semibold leading-none text-blue-600 border border-blue-400 rounded dark:hover:text-blue-300 dark:text-gray-400 dark:border-gray-400 hover:text-blue-700 hover:border-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </a>
+                    <button
+                        class="flex items-center px-3 py-2 text-blue-600 border border-blue-400 rounded dark:text-gray-400 hover:text-blue-800 hover:border-blue-300 dark:border-gray-400 lg:hidden"
+                        @click="open =true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+
+                </div>
+
+                <ul class="hidden lg:w-auto lg:space-x-12 lg:items-center lg:flex gap-2">
+                    <li><a href="#Home" class="text-lg text-gray-700 font-semibold hover:text-cyan-500 dark:text-gray-400 dark:hover:text-blue-300">Appointment</a>
+                    </li>
+                    <li><a href="#about-us" class="text-lg text-gray-700 font-semibold  hover:text-cyan-500 dark:text-gray-400 dark:hover:text-blue-300">Become a Shopkeper</a>
+                    </li>
+                    <li><a href="#Department" class="text-lg text-gray-700 font-semibold  hover:text-cyan-500 dark:text-gray-400 dark:hover:text-blue-300">Medicine </a>
+                    </li>
+                </ul>
+                <div class="hidden lg:flex gap-[2rem]">
+                    <a href="#" class="text-[1.8rem] text-gray-700">
+                        <i class="ri-account-circle-line"></i>
+                       <span class="text-[1.4rem] font-semibold text-gray-700"> Hello,Log in</span>
+                    </a> 
+                    <a href="#" class="text-[1.8rem] text-gray-700">
+                        <i class="ri-store-line"></i>
+                       <span class="text-[1.4rem] font-semibold text-gray-700"> Shop</span>
+                    </a> 
+                    <a href="" class="text-[1.8rem] text-gray-700">
+                        <i class="ri-shopping-cart-line"></i>
+                        <span class="text-[1.4rem] font-semibold text-gray-700"> Cart</span>
+                    </a>
+              
+                <a href="" class="text-[1.8rem] text-gray-700">
+                    <i class="ri-account-circle-line"></i>
+                </a>
+            </nav>
+        </div>
+    </section>
+    <section class="flex justify-center gap-5 mt-[5rem]  ">
+ <div class="">
+    <h1 class="font-bold  text-end text-[2rem] text-gray-600 pr-[17rem] ">Welcome to MediFill</h1>
+    <p class="font-bold text-end text-[1rem] text-[#10847e] pr-[17rem]">Login with us and get exclusive Discounts  <br> & Savings on Medicines.
+        Get express delivery in 2hrs</p>
+        <img class="h-[23rem] pr-[10rem]"  src="Login.png" alt="">
+ </div>
+ <div>
+    <div class="flex flex-col max-w-md p-6  border-2  rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800">
+        <div class="mb-8 text-center">
+            <h1 class="my-3 text-4xl text-[#10847e] font-bold">Log in</h1>
+            <p class="text-sm font-semibold text-gray-500 dark:text-gray-600">Log in to access your account</p>
+        </div>
+        <form novalidate="" action="" class="space-y-12">
+            <div class="space-y-4">
+                <div>
+                    <label for="email" class="block text-gray-500 mb-2 font-semibold text-sm">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email" class="w-full  px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" fdprocessedid="tz5jwb">
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <label for="password" class="text-sm font-semibold text-gray-500">Password</label>
+                        <a rel="noopener noreferrer" href="#" class="text-xs hover:underline text-gray-500 dark:text-gray-600">Forgot password?</a>
+                    </div>
+                    <input type="password" name="password" id="password" placeholder="*****" class="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" fdprocessedid="vahk7f">
+                </div>
+            </div>
+            <div class="space-y-2">
+                <div>
+                    <button type="button" class="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-600 dark:text-gray-50 text-white bg-[#10847e] w-[6rem] p-[0.3rem] border-2 rounded-full" fdprocessedid="nnowpb">Log in</button>
+                </div>
+                <p class="px-6 text-sm text-center dark:text-gray-600 font-semibold text-gray-500 ">Don't have an account yet?
+                    <a rel="noopener noreferrer" href="#" class="hover:underline dark:text-violet-600">Log in</a>.
+                </p>
+            </div>
+        </form>
+    </div>
+ </div>
+    </section>
+</body>
+</html>
